@@ -1,0 +1,95 @@
+:root {
+    --bg-color: #1a1a2e;
+    --card-bg: rgba(255, 255, 255, 0.05);
+    --primary-accent: #e94560;
+    --text-color: #e0e0e0;
+    --border-color: rgba(255, 255, 255, 0.1);
+}
+
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    background-image: url('./assets/background.svg');
+    background-size: cover;
+    background-position: center;
+}
+
+.app-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 2rem;
+}
+
+.app-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+h1, h2 {
+    color: white;
+}
+
+button, input {
+    font-family: inherit;
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+    border-radius: 12px;
+    border: none;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+button {
+    background-color: var(--primary-accent);
+    color: white;
+    font-weight: 600;
+}
+
+button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 20px rgba(233, 69, 96, 0.4);
+}
+
+input {
+    background-color: rgba(0,0,0,0.2);
+    border: 1px solid var(--border-color);
+    color: white;
+    width: 100%;
+    box-sizing: border-box;
+    margin-bottom: 1rem;
+}
+
+.glass-card {
+    background: var(--card-bg);
+    backdrop-filter: blur(15px);
+    -webkit-backdrop-filter: blur(15px);
+    border-radius: 20px;
+    border: 1px solid var(--border-color);
+    padding: 2rem;
+    margin-top: 1rem;
+}
+
+.tabs {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.tabs button {
+    background: transparent;
+    border: 1px solid var(--border-color);
+}
+
+.tabs button.active {
+    background: var(--primary-accent);
+    border-color: var(--primary-accent);
+    color: white;
+}
+
+.connect-prompt {
+    text-align: center;
+}
