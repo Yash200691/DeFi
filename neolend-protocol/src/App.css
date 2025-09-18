@@ -6,20 +6,25 @@
     --border-color: rgba(255, 255, 255, 0.1);
 }
 
-body {
+body, #root {
+    width: 100vw;
+    height: 100vh;
+    min-width: 100vw;
+    min-height: 100vh;
     margin: 0;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: var(--bg-color);
-    color: var(--text-color);
-    background-image: url('./assets/background.svg');
-    background-size: cover;
-    background-position: center;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .app-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 100vw;
+    min-height: 100vh;
+    height: 100%;
+    margin: 0;
     padding: 2rem;
+    box-sizing: border-box;
+    /* Remove max-width if present */
+    /* max-width: 1200px; */
 }
 
 .app-header {
